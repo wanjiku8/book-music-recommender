@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #f5f5f5;
+    background-color:rgba(245, 245, 245, 0.48);
     color: #333;
   }
 
@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
   .card {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
     padding: 20px;
     margin-bottom: 20px;
   }
@@ -51,7 +51,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   button {
-    background: #4CAF50;
+    background:rgb(255, 158, 2);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -61,14 +61,15 @@ export const GlobalStyle = createGlobalStyle`
     transition: background 0.3s;
 
     &:hover {
-      background: #45a049;
+      background:rgb(0, 0, 0);
     }
   }
 
   .nav {
     display: flex;
-    background: #333;
+    background: #222;
     padding: 15px 0;
+    border-bottom: 2px solid #444;
 
     a {
       color: white;
@@ -77,11 +78,11 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 18px;
 
       &:hover {
-        color: #4CAF50;
+        color:rgb(0, 0, 0);
       }
 
       &.active {
-        color: #4CAF50;
+        color:rgb(175, 76, 76);
         font-weight: bold;
       }
     }
