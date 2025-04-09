@@ -8,6 +8,16 @@ const BookContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
+
+    h1{
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #eb5c2a; /* Matching your nav color */
+    font-weight: 500;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+  }
 `;
 
 const BookCard = styled.div`
@@ -15,13 +25,14 @@ const BookCard = styled.div`
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   display: flex;
   gap: 20px;
 
   img {
-    width: 150px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 4px;
   }

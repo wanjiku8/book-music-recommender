@@ -8,20 +8,29 @@ const SongContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
+    h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #eb5c2a; /* Matching your nav color */
+    font-weight: 500;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+  }
 `;
 
 const SongCard = styled.div`
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
   margin-bottom: 20px;
   display: flex;
   gap: 20px;
 
   img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 4px;
   }
@@ -32,11 +41,25 @@ const SongCard = styled.div`
 
   h3 {
     margin-bottom: 10px;
-    color: #333;
+    color: brown;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 14ch;
+    margin-bottom: 8px; /* Optional spacing */
   }
-
-  .artist {
+  p{
     color: #666;
+    margin-bottom: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 16ch;
+    }
+  .artist {
+    color: orange;
+    text-transform: capitalize;
     margin-bottom: 10px;
   }
 

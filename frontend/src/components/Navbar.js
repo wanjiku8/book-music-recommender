@@ -3,9 +3,22 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
-  background: #333;
-  padding: 15px 0;
+  background: #eb5c2a;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.56);
+  width: 100%;
+  
+  /* Optional: Add transition for smooth effects */
+  transition: all 0.3s ease;
+  
+  
+ 
 `;
+
+
 
 const NavList = styled.div`
   display: flex;
@@ -21,23 +34,36 @@ const NavLink = styled(Link)`
   font-size: 18px;
 
   &:hover {
-    color: #4CAF50;
+    color:rgb(251, 212, 196);
   }
 
   &.active {
-    color: #4CAF50;
+    color:rgb(62, 62, 61);
     font-weight: bold;
   }
 `;
 
-function Navbar({ activeTab }) {
+function Navbar() {
   return (
     <Nav>
-      <NavList>
-        <NavLink to="/" className={activeTab === 'home' ? 'active' : ''}>Home</NavLink>
-        <NavLink to="/books" className={activeTab === 'books' ? 'active' : ''}>Books</NavLink>
-        <NavLink to="/songs" className={activeTab === 'songs' ? 'active' : ''}>Music</NavLink>
-      </NavList>
+      <NavLink 
+        to="/"
+        className={({ isActive }) => isActive ? "active" : ""}
+      >
+        Home
+      </NavLink>
+      <NavLink 
+        to="/books"
+        className={({ isActive }) => isActive ? "active" : ""}
+      >
+        Books
+      </NavLink>
+      <NavLink 
+        to="/songs"
+        className={({ isActive }) => isActive ? "active" : ""}
+      >
+        Music
+      </NavLink>
     </Nav>
   );
 }

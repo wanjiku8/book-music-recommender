@@ -51,7 +51,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   button {
-    background:rgb(255, 158, 2);
+    background:rgb(135, 85, 4) !important;
+    margin-bottom: 25px;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -61,15 +62,15 @@ export const GlobalStyle = createGlobalStyle`
     transition: background 0.3s;
 
     &:hover {
-      background:rgb(0, 0, 0);
+      background:rgb(0, 0, 0) !important;
     }
   }
 
   .nav {
     display: flex;
-    background: #222;
+    background: rgb(135, 85, 4);
     padding: 15px 0;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid red !important;
 
     a {
       color: white;
@@ -78,11 +79,11 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 18px;
 
       &:hover {
-        color:rgb(0, 0, 0);
+        color:rgb(0, 0, 0) !important;
       }
 
       &.active {
-        color:rgb(175, 76, 76);
+        color:rgb(83, 5, 5);
         font-weight: bold;
       }
     }
